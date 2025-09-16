@@ -2,10 +2,6 @@ import streamlit as st
 import base64
 
 
-
-
-
-
 class PortfolioData:
     """Contains all portfolio data and configuration"""
     
@@ -153,7 +149,7 @@ class PortfolioRenderer:
         self.data = data
     
     def render_hero(self):
-        image_path = "C:/Users/DEll/Desktop/cv photo.jpg"
+        image_path = "https://github.com/sonh2000/my-portfolio-app/blob/f6c106ac39af36cc6dd7f0b6672ff8ff5b054237/cv%20photo.jpg"
         
         with open(image_path, "rb") as img_file:
             img_base64 = base64.b64encode(img_file.read()).decode()
