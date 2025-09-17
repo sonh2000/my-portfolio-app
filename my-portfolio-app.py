@@ -149,25 +149,13 @@ class PortfolioRenderer:
         self.data = data
     
     def render_hero(self):
-        image_path = "https://github.com/sonh2000/my-portfolio-app/blob/f6c106ac39af36cc6dd7f0b6672ff8ff5b054237/cv%20photo.jpg"
+        image_path = "https://raw.githubusercontent.com/sonh2000/my-portfolio-app/bb3c2731c8cb5e29eeb5c461421d4a5f279c7631/cv_photo.jpg"
         
-        with open(image_path, "rb") as img_file:
-            img_base64 = base64.b64encode(img_file.read()).decode()
         col1, col2 = st.columns([1, 2])
         
 
         with col1:
-            st.markdown(
-         f"""
-        <style>
-        .cool-img {{
-            width: 80%;
-            border-radius: 25px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }}
-        </style>
-        <img src="data:image/jpg;base64,{img_base64}" class="cool-img">
-        """,
+             st.image(image_path, width=50, use_column_width=False)
     unsafe_allow_html=True
 )
         with col2:
