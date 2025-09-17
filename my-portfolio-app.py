@@ -335,21 +335,7 @@ class PortfolioRenderer:
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("---")
-        st.markdown("### Send me a message")
         
-        with st.form("contact_form"):
-            name = st.text_input("Your Name")
-            email = st.text_input("Your Email") 
-            subject = st.text_input("Subject")
-            message = st.text_area("Message", height=150)
-            
-            if st.form_submit_button("Send Message"):
-                if name and email and subject and message:
-                    st.success("Thank you for your message! I'll get back to you soon.")
-                    st.info("Note: This is a demo form. In a real deployment, integrate with an email service.")
-                else:
-                    st.error("Please fill in all fields.")
     
     def render_project_details(self):
         """Render detailed project page"""
