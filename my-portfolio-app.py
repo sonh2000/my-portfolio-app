@@ -155,7 +155,7 @@ class PortfolioRenderer:
         
 
         with col1:
-             st.image(image_path, width=50, use_column_width=False)
+             st.image(image_path, width=280)
 
         with col2:
             st.markdown(f"# {self.data.profile['name']}")
