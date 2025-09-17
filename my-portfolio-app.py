@@ -1,4 +1,4 @@
-import streamlit as st
+mimport streamlit as st
 import base64
 
 
@@ -663,7 +663,7 @@ class PortfolioApp:
             
             # Create navigation links
             nav_items = [
-                ("🏠 Home", "#home"),
+                ("🏠 about me", "#aboutme"),
                 ("💼 Portfolio", "#portfolio"), 
                 ("🛠️ Skills", "#skills"),
                 ("📞 Contact", "#contact")
